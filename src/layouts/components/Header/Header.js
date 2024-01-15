@@ -3,7 +3,7 @@ import styles from './Header.module.scss';
 import config from '~/config';
 import images from '~/assets/images';
 import { Link } from 'react-router-dom';
-import Button from '~/components/GlobalStyles/Button';
+import Button from '~/components/Button';
 import { useEffect, useState } from 'react';
 
 const cx = classNames.bind(styles);
