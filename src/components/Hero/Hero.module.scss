@@ -1,0 +1,55 @@
+.wrapper {
+    margin-top: 8em;
+}
+
+.title {
+    font-size: 4rem;
+    color: var(--white);
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 24px;
+}
+
+.booked-user {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.book-info {
+    margin-left: 24px;
+    font-weight: 500;
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.list-item {
+    width: 36px;
+    height: 36px;
+    margin-right: -10px;
+}
+
+.avatar,
+.icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.filter {
+    margin-top: 24px;
+}

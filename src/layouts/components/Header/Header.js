@@ -4,12 +4,12 @@ import config from '~/config';
 import images from '~/assets/images';
 import { Link } from 'react-router-dom';
 import Button from '~/components/Button';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const cx = classNames.bind(styles);
 
 function Header() {
-    const [isScrollTop, setIsScrollTop] = useState(false);
+    const [isScrollTop, setIsScrollTop] = useState(true);
 
     window.onscroll = () => {
         window.scrollY ? setIsScrollTop(false) : setIsScrollTop(true);
