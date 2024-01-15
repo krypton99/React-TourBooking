@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { publicRoutes } from '~/routes';
 import DefaultLayout from './layouts/DefaultLayout';
 import { Fragment } from 'react';
-import HomeBanner from './components/GlobalStyles/Banner';
+import HomeBanner from './components/Banner';
 
 function App() {
     return (
