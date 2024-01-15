@@ -1,0 +1,16 @@
+.wrapper {
+    background-image: url('../../../assets/images/vịnh\ hạ\ long.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: var(--banner-height);
+
+    .overlay {
+        background: linear-gradient(
+            180deg,
+            rgba(2, 0, 18, 0.6672794117647058) 0%,
+            rgba(0, 18, 47, 0.3255427170868347) 51%,
+            rgba(255, 255, 255, 0) 100%
+        );
+        height: 100%;
+    }
+}
