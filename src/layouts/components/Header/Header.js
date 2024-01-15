@@ -3,6 +3,7 @@ import styles from './Header.module.scss';
 import config from '~/config';
 import images from '~/assets/images';
 import { Link } from 'react-router-dom';
+import Button from '~/components/GlobalStyles/Button';
 
 const cx = classNames.bind(styles);
 
@@ -22,7 +23,10 @@ function Header() {
                 <Link to={config.routes.tour} className={cx('link')}>
                     Tour
                 </Link>
-                <div className={cx('actions')}></div>
+                <div className={cx('actions')}>
+                    <Button text>Đăng ký</Button>
+                    <Button text>Đăng nhập</Button>
+                </div>
             </div>
         </header>
     );
