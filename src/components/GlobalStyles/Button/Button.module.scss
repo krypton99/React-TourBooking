@@ -72,6 +72,8 @@
 }
 
 .text {
+    background-color: transparent;
+    color: var(--white);
     &:hover {
         text-decoration: underline;
     }

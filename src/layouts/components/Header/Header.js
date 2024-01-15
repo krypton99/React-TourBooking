@@ -4,12 +4,19 @@ import config from '~/config';
 import images from '~/assets/images';
 import { Link } from 'react-router-dom';
 import Button from '~/components/GlobalStyles/Button';
+import { useEffect, useState } from 'react';
 
 const cx = classNames.bind(styles);
 
 function Header() {
+    const [isScrollTop, setIsScrollTop] = useState(false);
+
+    window.onscroll = () => {
+        window.scrollY ? setIsScrollTop(false) : setIsScrollTop(true);
+    };
+
     return (
-        <header className={cx('wrapper')}>
+        <header className={cx('wrapper', { top: !isScrollTop })}>
             <div className={cx('inner')}>
                 <Link to={config.routes.home} className={cx('logo-link')}>
                     <img src={images.logo} alt="logo" />

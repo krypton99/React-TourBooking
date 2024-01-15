@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { publicRoutes } from '~/routes';
 import DefaultLayout from './layouts/DefaultLayout';
 import { Fragment } from 'react';
+import HomeBanner from './components/GlobalStyles/Banner';
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
                     {publicRoutes.map((route, index) => {
                         console.log(route.path);
                         const Page = route.component;
+                        let Banner = route.banner ? HomeBanner : Fragment;
                         let Layout = DefaultLayout;
 
                         if (route.layout) {
@@ -24,9 +26,11 @@ function App() {
                                 key={index}
                                 path={route.path}
                                 element={
-                                    <Layout>
-                                        <Page />
-                                    </Layout>
+                                    <Banner>
+                                        <Layout>
+                                            <Page />
+                                        </Layout>
+                                    </Banner>
                                 }
                             />
                         );
