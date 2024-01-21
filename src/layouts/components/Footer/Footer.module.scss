@@ -1,0 +1,60 @@
+.wrapper {
+    margin: 32px 0;
+}
+
+.about,
+.note {
+    color: #84829a;
+}
+.title {
+    display: block;
+    margin: 16px 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.list {
+    list-style: none;
+}
+.item {
+    margin-top: 16px;
+}
+.subscribe {
+    min-width: 135px;
+}
+
+.contact-list {
+    list-style: none;
+    display: flex;
+}
+.contact-item {
+    margin-right: 12px;
+    margin-top: 12px;
+}
+
+.icon {
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+.input {
+    background-color: #eeeeff;
+    border: none;
+    height: 48px;
+    padding-left: 16px;
+    width: 70%;
+}
+
+.subscribe-form {
+    margin: 8px 0;
+    display: flex;
+}
+
+.footer-bottom {
+    border-top: 2px solid #d7d7d7a1;
+    margin: 16px 0;
+    text-align: center;
+}
+
+.license {
+    margin-top: 16px;
+}
