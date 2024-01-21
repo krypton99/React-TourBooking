@@ -4,6 +4,7 @@ import FilterMenu from '~/components/FilterMenu';
 import Hero from '~/components/Hero';
 import Partner from '~/components/Partner';
 import HomeCategory from '~/components/HomeCategory';
+import TrendingTours from '~/components/TrendingTours';
 
 const cx = classNames.bind(styles);
 
@@ -15,6 +16,7 @@ function Home() {
             </div>
             <Partner />
             <HomeCategory />
+            <TrendingTours />
         </div>
     );
 }
