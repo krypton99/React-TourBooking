@@ -6,7 +6,7 @@
     --white: #fff;
     --text-color: #161823;
 
-    --font-family: 'TikTokFont', sans-serif;
+    --font-family: 'TikTokFont' .sans-serif;
 
     --banner-height: 61em;
     //Default layout
@@ -48,7 +48,7 @@ html *::-webkit-scrollbar-thumb {
 
 html *::-webkit-scrollbar-track {
     border-radius: 0;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0);
 }
 
 button,
@@ -194,8 +194,8 @@ body {
 }
 
 .c-8 {
-    flex: 0 0 66, 6667%;
-    max-width: 66, 6667%;
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
 }
 
 .c-9 {
@@ -204,13 +204,13 @@ body {
 }
 
 .c-10 {
-    flex: 0 0 83, 3333%;
-    max-width: 83, 3333%;
+    flex: 0 0 83.3333%;
+    max-width: 83.3333%;
 }
 
 .c-11 {
-    flex: 0 0 91, 6667%;
-    max-width: 91, 6667%;
+    flex: 0 0 91.6667%;
+    max-width: 91.6667%;
 }
 
 .c-12 {
@@ -252,7 +252,7 @@ body {
 }
 
 .c-o-8 {
-    margin-left: 66, 6667%;
+    margin-left: 66.6667%;
 }
 
 .c-o-9 {
@@ -260,11 +260,11 @@ body {
 }
 
 .c-o-10 {
-    margin-left: 83, 3333%;
+    margin-left: 83.3333%;
 }
 
 .c-o-11 {
-    margin-left: 91, 6667%;
+    margin-left: 91.6667%;
 }
 
 /* >= Tablet */
@@ -352,8 +352,8 @@ body {
     }
 
     .m-8 {
-        flex: 0 0 66, 6667%;
-        max-width: 66, 6667%;
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
     }
 
     .m-9 {
@@ -362,13 +362,13 @@ body {
     }
 
     .m-10 {
-        flex: 0 0 83, 3333%;
-        max-width: 83, 3333%;
+        flex: 0 0 83.3333%;
+        max-width: 83.3333%;
     }
 
     .m-11 {
-        flex: 0 0 91, 6667%;
-        max-width: 91, 6667%;
+        flex: 0 0 91.6667%;
+        max-width: 91.6667%;
     }
 
     .m-12 {
@@ -414,7 +414,7 @@ body {
     }
 
     .m-o-8 {
-        margin-left: 66, 6667%;
+        margin-left: 66.6667%;
     }
 
     .m-o-9 {
@@ -422,11 +422,11 @@ body {
     }
 
     .m-o-10 {
-        margin-left: 83, 3333%;
+        margin-left: 83.3333%;
     }
 
     .m-o-11 {
-        margin-left: 91, 6667%;
+        margin-left: 91.6667%;
     }
 }
 
@@ -516,8 +516,8 @@ body {
     }
 
     .l-8 {
-        flex: 0 0 66, 6667%;
-        max-width: 66, 6667%;
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
     }
 
     .l-9 {
@@ -526,13 +526,13 @@ body {
     }
 
     .l-10 {
-        flex: 0 0 83, 3333%;
-        max-width: 83, 3333%;
+        flex: 0 0 83.3333%;
+        max-width: 83.3333%;
     }
 
     .l-11 {
-        flex: 0 0 91, 6667%;
-        max-width: 91, 6667%;
+        flex: 0 0 91.6667%;
+        max-width: 91.6667%;
     }
 
     .l-12 {
@@ -576,7 +576,7 @@ body {
     }
 
     .l-o-8 {
-        margin-left: 66, 6667%;
+        margin-left: 66.6667%;
     }
 
     .l-o-9 {
@@ -584,11 +584,11 @@ body {
     }
 
     .l-o-10 {
-        margin-left: 83, 3333%;
+        margin-left: 83.3333%;
     }
 
     .l-o-11 {
-        margin-left: 91, 6667%;
+        margin-left: 91.6667%;
     }
 }
 
@@ -674,8 +674,8 @@ body {
     }
 
     .wide .l-8 {
-        flex: 0 0 66, 6667%;
-        max-width: 66, 6667%;
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
     }
 
     .wide .l-9 {
@@ -684,13 +684,13 @@ body {
     }
 
     .wide .l-10 {
-        flex: 0 0 83, 3333%;
-        max-width: 83, 3333%;
+        flex: 0 0 83.3333%;
+        max-width: 83.3333%;
     }
 
     .wide .l-11 {
-        flex: 0 0 91, 6667%;
-        max-width: 91, 6667%;
+        flex: 0 0 91.6667%;
+        max-width: 91.6667%;
     }
 
     .wide .l-12 {
@@ -735,7 +735,7 @@ body {
     }
 
     .wide .l-o-8 {
-        margin-left: 66, 6667%;
+        margin-left: 66.6667%;
     }
 
     .wide .l-o-9 {
@@ -743,11 +743,11 @@ body {
     }
 
     .wide .l-o-10 {
-        margin-left: 83, 3333%;
+        margin-left: 83.3333%;
     }
 
     .wide .l-o-11 {
-        margin-left: 91, 6667%;
+        margin-left: 91.6667%;
     }
 }
 
