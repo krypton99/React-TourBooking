@@ -3,7 +3,8 @@ import styles from './ManagementSidebar.module.scss';
 import SidebarMenu from './SidebarMenu';
 import SidebarItem from './SidebarItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGear } from '@fortawesome/free-solid-svg-icons';
+import { faGear, faPlus } from '@fortawesome/free-solid-svg-icons';
+import config from '~/config';
 
 const cx = classNames.bind(styles);
 
@@ -15,13 +16,13 @@ function ManagementSidebar() {
                 <SidebarMenu title="Tour">
                     <SidebarItem
                         title="Tour"
-                        to="/admin/tour"
+                        to={config.routes.tourManagement.tours}
                         icon={<FontAwesomeIcon icon={faGear} />}
                     />
                     <SidebarItem
-                        title="Tour"
-                        to="/admin/tour"
-                        icon={<FontAwesomeIcon icon={faGear} />}
+                        title="Create Tour"
+                        to={config.routes.tourManagement.createTour}
+                        icon={<FontAwesomeIcon icon={faPlus} />}
                     />
                 </SidebarMenu>
                 <SidebarMenu title="Tour">

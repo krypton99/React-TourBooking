@@ -4,7 +4,10 @@ const routes = {
     services: '/services',
     tour: '/tour',
     admin: '/admin',
-    tourManagement: '/admin/tour',
+    tourManagement: {
+        tours: '/admin/tour',
+        createTour: '/admin/tour/create',
+    },
 };
 
 export default routes;
