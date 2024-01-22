@@ -1,16 +1,35 @@
+import { useState } from 'react';
 import styles from '../../Admin.module.scss';
 import classNames from 'classnames/bind';
+import * as tourServices from '~/services/TourServices';
+import { useParams } from 'react-router-dom';
 
-const cx = classNames.bind(styles);
+function EditTour() {
+    const [tour, setTour] = useState({});
 
-function Tour() {
+    const params = useParams();
+
+    useState(() => {
+        const handleApi = async () => {
+            const tour = await tourServices.getTourById(params.id);
+            setTour(tour);
+        };
+        handleApi();
+    }, []);
+
+    console.log(tour);
     return (
-        <form method="POST" action="http://localhost:3001/api/tours/">
+        <form>
             <div className="mb-3">
                 <label htmlFor="name" className="form-label">
                     Tên Tour
                 </label>
-                <input type="text" name="name" className="form-control" />
+                <input
+                    type="text"
+                    name="name"
+                    className="form-control"
+                    value={tour.name}
+                />
             </div>
             <div className="mb-3">
                 <label htmlFor="avatar_tour" className="form-label">
@@ -19,6 +38,7 @@ function Tour() {
                 <input
                     type="text"
                     name="avatar_tour"
+                    value={tour.avatar_tour}
                     className="form-control"
                 />
             </div>
@@ -26,7 +46,12 @@ function Tour() {
                 <label htmlFor="code_tour" className="form-label">
                     Mã Code
                 </label>
-                <input type="text" name="code_tour" className="form-control" />
+                <input
+                    value={tour.code_tour}
+                    type="text"
+                    name="code_tour"
+                    className="form-control"
+                />
             </div>
             <div className="mb-3">
                 <label htmlFor="discount_percent" className="form-label">
@@ -34,6 +59,7 @@ function Tour() {
                 </label>
                 <input
                     type="text"
+                    value={tour.discount_percent}
                     name="discount_percent"
                     className="form-control"
                 />
@@ -44,6 +70,7 @@ function Tour() {
                 </label>
                 <input
                     type="text"
+                    value={tour.start_place}
                     name="start_place"
                     className="form-control"
                 />
@@ -52,37 +79,63 @@ function Tour() {
                 <label htmlFor="end_place" className="form-label">
                     Điểm kết thúc
                 </label>
-                <input type="text" name="end_place" className="form-control" />
+                <input
+                    type="text"
+                    value={tour.end_place}
+                    name="end_place"
+                    className="form-control"
+                />
             </div>
             <div className="mb-3">
                 <label htmlFor="time" className="form-label">
                     Số ngày
                 </label>
-                <input type="number" name="time" className="form-control" />
+                <input
+                    type="number"
+                    value={tour.time}
+                    name="time"
+                    className="form-control"
+                />
             </div>
             <div className="mb-3">
                 <label htmlFor="national" className="form-label">
                     Quốc gia
                 </label>
-                <input type="text" name="national" className="form-control" />
+                <input
+                    type="text"
+                    value={tour.national}
+                    name="national"
+                    className="form-control"
+                />
             </div>
             <div className="mb-3">
                 <label htmlFor="province" className="form-label">
                     Tỉnh thành
                 </label>
-                <input type="text" name="province" className="form-control" />
+                <input
+                    type="text"
+                    value={tour.province}
+                    name="province"
+                    className="form-control"
+                />
             </div>
             <div className="mb-3">
                 <label htmlFor="start_time" className="form-label">
                     Thời gian bắt đầu
                 </label>
-                <input type="date" name="start_time" className="form-control" />
+                <input
+                    type="date"
+                    value={tour.start_time}
+                    name="start_time"
+                    className="form-control"
+                />
             </div>
             <div className="mb-3">
                 <label htmlFor="description" className="form-label">
                     Mô tả
                 </label>
                 <textarea
+                    value={tour.description}
                     name="description"
                     className="form-control"
                 ></textarea>
@@ -94,4 +147,4 @@ function Tour() {
     );
 }
 
-export default Tour;
+export default EditTour;

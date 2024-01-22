@@ -7,7 +7,6 @@ import ManagementSidebar from './components/ManagementSidebar';
 const cx = classNames.bind(styles);
 
 function ManagementLayout({ children }) {
-    console.log(children);
     return (
         <div className={cx('wrapper')}>
             <div className={cx('container')}>

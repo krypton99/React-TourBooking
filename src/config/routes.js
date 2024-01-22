@@ -7,6 +7,7 @@ const routes = {
     tourManagement: {
         tours: '/admin/tour',
         createTour: '/admin/tour/create',
+        editTour: '/admin/tour/:id',
     },
 };
 

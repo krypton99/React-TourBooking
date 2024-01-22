@@ -8,6 +8,7 @@ import Services from '~/pages/Services';
 import Admin from '~/pages/Admin';
 import ManagementLayout from '~/layouts/ManagementLayout';
 import CreateTour from '~/pages/Admin/TourManagement/CreateTour';
+import EditTour from '~/pages/Admin/TourManagement/EditTour/EditTour';
 
 // Public Routes
 const publicRoutes = [
@@ -34,6 +35,11 @@ const publicRoutes = [
     {
         path: config.routes.tourManagement.createTour,
         component: CreateTour,
+        layout: ManagementLayout,
+    },
+    {
+        path: config.routes.tourManagement.editTour,
+        component: EditTour,
         layout: ManagementLayout,
     },
 ];

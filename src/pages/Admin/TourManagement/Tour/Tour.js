@@ -2,6 +2,8 @@ import styles from '../../Admin.module.scss';
 import classNames from 'classnames/bind';
 import { useEffect, useState } from 'react';
 import Table from 'react-bootstrap/Table';
+import { Link } from 'react-router-dom';
+import config from '~/config';
 import { getTours } from '~/services/TourServices';
 
 const cx = classNames.bind(styles);
@@ -25,6 +27,7 @@ function Tour() {
                     <th>Tour name</th>
                     <th>description</th>
                     <th>code</th>
+                    <th colSpan={2}>actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -35,6 +38,8 @@ function Tour() {
                             <td>{tour.name}</td>
                             <td>{tour.description}</td>
                             <td>{tour.code_tour}</td>
+                            <Link to={'/admin/tour/' + tour.id}>Sửa</Link>
+                            <Link>Xóa</Link>
                         </tr>
                     );
                 })}
