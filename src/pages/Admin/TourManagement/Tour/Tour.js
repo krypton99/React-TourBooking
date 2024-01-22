@@ -38,8 +38,10 @@ function Tour() {
                             <td>{tour.name}</td>
                             <td>{tour.description}</td>
                             <td>{tour.code_tour}</td>
-                            <Link to={'/admin/tour/' + tour.id}>Sửa</Link>
-                            <Link>Xóa</Link>
+                            <td>
+                                <Link to={'/admin/tour/' + tour.id}>Sửa</Link>
+                                <Link>Xóa</Link>
+                            </td>
                         </tr>
                     );
                 })}

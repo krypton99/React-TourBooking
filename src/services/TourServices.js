@@ -11,3 +11,8 @@ export const getTourById = async (id) => {
     const response = await axios.get(tourApi + id);
     return response.data;
 };
+
+export const editTour = async (id, data) => {
+    const response = await axios.put(tourApi + id, data);
+    return response.data;
+};
