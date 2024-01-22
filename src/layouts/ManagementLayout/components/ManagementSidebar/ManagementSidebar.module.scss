@@ -1,5 +1,5 @@
 .wrapper {
-    width: 250px;
+    width: var(--management-layout-sidebar-width);
     height: 100vh;
     position: fixed;
     background-color: #4268d6;

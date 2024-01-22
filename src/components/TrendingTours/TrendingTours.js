@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import styles from './TrendingTours.module.scss';
 import TourItem from './TourItem';
 import { useEffect, useState } from 'react';
-import axios from 'axios';
+import * as tourServices from '~/services/TourServices';
 
 const cx = classNames.bind(styles);
 
@@ -16,19 +16,15 @@ function TrendingTours() {
         return text;
     };
 
-    const getTours = async () => {
-        const response = await axios.get(
-            'http://localhost:3001/api/tours/?top=4',
-        );
-        const tours = response.data;
-        tours.forEach((tour) => {
-            tour.description = textMinimize(tour.description, 40);
-        });
-        setTours(tours);
-    };
-
     useEffect(() => {
-        getTours();
+        const handleApi = async () => {
+            const tours = await tourServices.getTours(4);
+            tours.forEach((tour) => {
+                tour.description = textMinimize(tour.description, 40);
+            });
+            setTours(tours);
+        };
+        handleApi();
     }, []);
 
     return (

@@ -5,7 +5,7 @@ import FilterBar from '~/components/FilterBar';
 import TourWrapper from './components/TourWrapper';
 import TourItem from './components/TourItem';
 import { useEffect, useState } from 'react';
-import axios from 'axios';
+import * as tourServices from '~/services/TourServices';
 
 const cx = classNames.bind(styles);
 
@@ -27,20 +27,16 @@ function Tour() {
         return date;
     };
 
-    const getTours = async () => {
-        const response = await axios.get(
-            'http://localhost:3001/api/tours/?top=6',
-        );
-        const tours = response.data;
-        tours.forEach((tour) => {
-            tour.description = textMinimize(tour.description, 40);
-            tour.start_time = dateMinimize(tour.start_time);
-        });
-        setTours(tours);
-    };
-
     useEffect(() => {
-        getTours();
+        const handleApi = async () => {
+            const tours = await tourServices.getTours(6);
+            tours.forEach((tour) => {
+                tour.description = textMinimize(tour.description, 40);
+                tour.start_time = dateMinimize(tour.start_time);
+            });
+            setTours(tours);
+        };
+        handleApi();
     }, []);
 
     return (
