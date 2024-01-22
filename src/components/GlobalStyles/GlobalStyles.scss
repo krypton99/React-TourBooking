@@ -6,7 +6,7 @@
     --white: #fff;
     --text-color: #161823;
 
-    --font-family: 'TikTokFont' .sans-serif;
+    --font-family: 'TikTokFont', sans-serif;
 
     --banner-height: 61em;
     //Default layout
@@ -14,6 +14,17 @@
     --default-layout-width: 1200px;
     --default-layout-sidebar-width: 356px;
     --default-layout-horizontal-padding: 24px;
+
+    //Management layout
+    --management-layout-sidebar-width: 250px;
+}
+
+.m-4 {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
 }
 
 * {
