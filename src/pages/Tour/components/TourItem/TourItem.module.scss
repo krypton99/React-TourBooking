@@ -1,0 +1,41 @@
+.wrapper {
+    padding: 0 16px;
+}
+
+.tour-img {
+    height: 200px;
+    width: 100%;
+}
+
+.tour-info {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour-info-item {
+}
+
+.tour-info-desc {
+    font-size: 1.4rem;
+    margin-left: 8px;
+}
+
+.tour-name {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.tour-desc {
+    height: 150px;
+}
+
+.tour-footer {
+}
+
+.tour-price {
+}
+
+.tour-rate {
+    margin-left: 16px;
+}

@@ -1,0 +1,14 @@
+.wrapper {
+    position: relative;
+}
+
+.hero-container {
+    height: calc(var(--banner-height) - var(--default-layout-header-height));
+    padding-top: 6em;
+}
+
+.filter-bar {
+    position: absolute;
+    top: calc(var(--banner-height) - 148px);
+    width: 100%;
+}

@@ -13,7 +13,12 @@ const publicRoutes = [
         layout: HeaderOnly,
         banner: true,
     },
-    { path: config.routes.tour, component: Tour, layout: HeaderOnly },
+    {
+        path: config.routes.tour,
+        component: Tour,
+        layout: HeaderOnly,
+        banner: true,
+    },
     { path: config.routes.about, component: About, layout: HeaderOnly },
     { path: config.routes.services, component: Services, layout: HeaderOnly },
 ];

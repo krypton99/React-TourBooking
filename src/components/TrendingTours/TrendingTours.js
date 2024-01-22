@@ -17,7 +17,9 @@ function TrendingTours() {
     };
 
     const getTours = async () => {
-        const response = await axios.get('http://localhost:3001/api/tours/');
+        const response = await axios.get(
+            'http://localhost:3001/api/tours/?top=4',
+        );
         const tours = response.data;
         tours.forEach((tour) => {
             tour.description = textMinimize(tour.description, 40);
