@@ -10,12 +10,13 @@ const cx = classNames.bind(styles);
 
 function Tour() {
     const [tours, setTours] = useState([]);
-
+    const handleApi = async () => {
+        const tours = await getTours();
+        console.log(tours);
+        setTours(tours);
+    };
     useEffect(() => {
-        const handleApi = async () => {
-            const tours = await getTours();
-            setTours(tours);
-        };
+        console.log('mounted');
         handleApi();
     }, []);
 
@@ -33,7 +34,7 @@ function Tour() {
             <tbody>
                 {tours.map((tour) => {
                     return (
-                        <tr>
+                        <tr key={tour.id}>
                             <td>{tour.id}</td>
                             <td>{tour.name}</td>
                             <td>{tour.description}</td>

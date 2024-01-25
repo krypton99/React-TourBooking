@@ -16,3 +16,13 @@ export const editTour = async (id, data) => {
     const response = await axios.put(tourApi + id, data);
     return response.data;
 };
+
+export const editTourPrice = async (id, data) => {
+    const response = await axios.put(tourApi + 'price/' + id, data);
+    return response.data;
+};
+
+export const createTour = async (data) => {
+    const response = await axios.post(tourApi, data);
+    return response.data;
+};

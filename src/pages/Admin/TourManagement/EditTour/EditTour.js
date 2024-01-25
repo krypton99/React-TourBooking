@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from '../../Admin.module.scss';
 import classNames from 'classnames/bind';
 import * as tourServices from '~/services/TourServices';
@@ -23,23 +23,25 @@ function EditTour() {
 
     const submit = (e) => {
         e.preventDefault();
-        tourServices.editTour(params.id, {
-            name: e.target.name.value,
-            code_tour: e.target.code_tour.value,
-            avatar_tour: e.target.avatar_tour.value,
-            discount_percent: e.target.discount_percent.value,
-            start_place: e.target.start_place.value,
-            end_place: e.target.end_place.value,
-            time: e.target.time.value,
-            national: e.target.national.value,
-            province: e.target.province.value,
-            start_time: e.target.start_time.value,
-            description: e.target.description.value,
+        const tour = {
+            name: name,
+            code_tour: codeTour,
+            avatar_tour: avatarTour,
+            discount_percent: parseInt(discountPercent),
+            start_place: startPlace,
+            end_place: endPlace,
+            time: time,
+            national: national,
+            province: province,
+            start_time: new Date(startTime).toISOString(),
+            description: description,
+        };
+        tourServices.editTour(params.id, tour).then(() => {
+            navigate(config.routes.tourManagement.tours);
         });
-        navigate(config.routes.tourManagement.tours);
     };
 
-    useState(() => {
+    useEffect(() => {
         const handleApi = async () => {
             const tour = await tourServices.getTourById(params.id);
             setCodeTour(tour.code_tour);

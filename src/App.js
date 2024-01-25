@@ -10,7 +10,6 @@ function App() {
             <div className="App">
                 <Routes>
                     {publicRoutes.map((route, index) => {
-                        console.log(route.path);
                         const Page = route.component;
                         let Banner = route.banner ? HomeBanner : Fragment;
                         let Layout = DefaultLayout;
