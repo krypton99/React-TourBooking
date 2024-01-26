@@ -7,3 +7,9 @@
     flex: 1;
     padding: 32px;
 }
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .content {
+        margin-left: 50px;
+    }
+}

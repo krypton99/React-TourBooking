@@ -3,6 +3,7 @@
     height: 100vh;
     position: fixed;
     background-color: #4268d6;
+    z-index: 2;
 }
 
 .content {
@@ -40,4 +41,20 @@
 
 .item-icon {
     opacity: 0.5;
+}
+
+//responsive
+//Tablet
+@media (min-width: 740px) and (max-width: 1023px) {
+    .wrapper {
+        transform: translateX(
+            calc(50px - var(--management-layout-sidebar-width))
+        );
+        transition: transform linear 0.3s;
+
+        &:hover {
+            transform: translateX(0);
+            transition: transform linear 0.3s;
+        }
+    }
 }
