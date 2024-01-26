@@ -21,14 +21,14 @@ function Tour() {
     }, []);
 
     return (
-        <Table striped bordered hover>
+        <Table bordered hover responsive>
             <thead>
                 <tr>
                     <th>#</th>
                     <th>Tour name</th>
                     <th>description</th>
                     <th>code</th>
-                    <th colSpan={2}>actions</th>
+                    <th colSpan={3}>actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -39,9 +39,20 @@ function Tour() {
                             <td>{tour.name}</td>
                             <td>{tour.description}</td>
                             <td>{tour.code_tour}</td>
-                            <td>
-                                <Link to={'/admin/tour/' + tour.id}>Sửa</Link>
-                                <Link>Xóa</Link>
+                            <td className="d-flex align-item-center">
+                                <Link
+                                    className="btn btn-primary "
+                                    to={'/admin/tour/' + tour.id}
+                                >
+                                    Sửa
+                                </Link>
+                                <Link
+                                    className="btn btn-primary"
+                                    to={'/admin/tour/prices/' + tour.id}
+                                >
+                                    Giá
+                                </Link>
+                                <Link className="btn btn-primary">Xóa</Link>
                             </td>
                         </tr>
                     );

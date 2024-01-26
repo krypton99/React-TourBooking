@@ -20,6 +20,11 @@ export const editPrice = async (id, data) => {
 };
 
 export const createPrice = async (data) => {
-    const response = await axios.put(priceApi, data);
+    const response = await axios.post(priceApi, data);
+    return response.data;
+};
+
+export const deletePrice = async (id) => {
+    const response = await axios.delete(priceApi + id);
     return response.data;
 };

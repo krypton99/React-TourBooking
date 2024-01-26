@@ -8,7 +8,9 @@ const routes = {
         tours: '/admin/tour',
         createTour: '/admin/tour/create',
         editTour: '/admin/tour/:id',
-        editTourPrice: '/admin/tour/prices/:id',
+        tourPrice: '/admin/tour/prices/:id',
+        addTourPrice: '/admin/tour/prices/create/:id',
+        editTourPrice: '/admin/tour/prices/edit/:id',
     },
 };
 

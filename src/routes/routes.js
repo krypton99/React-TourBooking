@@ -10,6 +10,8 @@ import ManagementLayout from '~/layouts/ManagementLayout';
 import CreateTour from '~/pages/Admin/TourManagement/CreateTour';
 import EditTour from '~/pages/Admin/TourManagement/EditTour/EditTour';
 import Price from '~/pages/Admin/PriceManagement/Price/Price';
+import CreatePrice from '~/pages/Admin/PriceManagement/CreatePrice';
+import EditPrice from '~/pages/Admin/PriceManagement/EditPrice/EditPrice';
 
 // Public Routes
 const publicRoutes = [
@@ -44,8 +46,18 @@ const publicRoutes = [
         layout: ManagementLayout,
     },
     {
-        path: config.routes.tourManagement.editTourPrice,
+        path: config.routes.tourManagement.tourPrice,
         component: Price,
+        layout: ManagementLayout,
+    },
+    {
+        path: config.routes.tourManagement.addTourPrice,
+        component: CreatePrice,
+        layout: ManagementLayout,
+    },
+    {
+        path: config.routes.tourManagement.editTourPrice,
+        component: EditPrice,
         layout: ManagementLayout,
     },
 ];
