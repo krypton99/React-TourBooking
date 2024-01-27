@@ -37,7 +37,7 @@ function TrendingTours() {
                         return (
                             <div
                                 key={tour.id}
-                                className={cx('grid__column l-3 m-6 c-6')}
+                                className={cx('grid__column lg-3 md-6 c-6')}
                             >
                                 <TourItem data={tour} />
                             </div>

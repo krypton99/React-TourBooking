@@ -7,7 +7,7 @@ function HomeCategory() {
     return (
         <div className={cx('wrapper', 'grid wide')}>
             <div className={cx('grid__row')}>
-                <div className={cx('grid__column l-12')}>
+                <div className={cx('grid__column lg-12')}>
                     <h3 className={cx('label')}>CATEGORY</h3>
                     <h3 className={cx('title')}>
                         CHÚNG TÔI MANG LẠI DỊCH VỤ TỐT NHẤT
@@ -17,7 +17,7 @@ function HomeCategory() {
                     href="/"
                     className={cx(
                         'home-category-link',
-                        'grid__column l-3 m-6 c-12',
+                        'grid__column lg-3 md-6 c-12',
                     )}
                 >
                     <div className={cx('item')}>
@@ -39,7 +39,7 @@ function HomeCategory() {
                     href="/"
                     className={cx(
                         'home-category-link',
-                        'grid__column l-3 m-6 c-12',
+                        'grid__column lg-3 md-6 c-12',
                     )}
                 >
                     <div className={cx('item')}>
@@ -61,7 +61,7 @@ function HomeCategory() {
                     href="/"
                     className={cx(
                         'home-category-link',
-                        'grid__column l-3 m-6 c-12',
+                        'grid__column lg-3 md-6 c-12',
                     )}
                 >
                     <div className={cx('item')}>
@@ -83,7 +83,7 @@ function HomeCategory() {
                     href="/"
                     className={cx(
                         'home-category-link',
-                        'grid__column l-3 m-6 c-12',
+                        'grid__column lg-3 md-6 c-12',
                     )}
                 >
                     <div className={cx('item')}>

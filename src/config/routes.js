@@ -3,6 +3,7 @@ const routes = {
     about: '/about',
     services: '/services',
     tour: '/tour',
+    detail: '/tour/detail/:id',
     admin: '/admin',
     tourManagement: {
         tours: '/admin/tour',

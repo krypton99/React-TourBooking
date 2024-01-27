@@ -17,7 +17,7 @@ function Footer() {
         <div className={cx('wrapper')}>
             <div className={cx('grid wide')}>
                 <div className={cx('grid__row')}>
-                    <div className={cx('grid__column l-2-4 m-4 c-0')}>
+                    <div className={cx('grid__column lg-2-4 md-4 c-0')}>
                         <img src={images.logo2} alt="logo" />
                         <p className={cx('about')}>
                             Travel helps companies manage payments easily.
@@ -57,7 +57,7 @@ function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div className={cx('grid__column l-2-4 m-4 c-0')}>
+                    <div className={cx('grid__column lg-2-4 md-4 c-0')}>
                         <h3 className={cx('title')}>Company</h3>
                         <ul className={cx('list')}>
                             <li className={cx('item')}>
@@ -74,7 +74,7 @@ function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div className={cx('grid__column l-2-4 m-4 c-0')}>
+                    <div className={cx('grid__column lg-2-4 md-4 c-0')}>
                         <h3 className={cx('title')}>Destinations</h3>
                         <ul className={cx('list')}>
                             <li className={cx('item')}>
@@ -91,7 +91,7 @@ function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div className={cx('grid__column l-4-8 m-12 c-12')}>
+                    <div className={cx('grid__column lg-4-8 md-12 c-12')}>
                         <label
                             htmlFor="subscribe-email"
                             className={cx('title')}

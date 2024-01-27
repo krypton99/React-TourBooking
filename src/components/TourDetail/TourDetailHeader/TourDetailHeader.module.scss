@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    background-color: #f8f8f8;
+    height: 80px;
+}
+
+.item {
+    font-size: 2.1rem;
+    flex: 1;
+    padding: 23px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.active {
+        background-color: var(--white);
+    }
+}
+
+.icon {
+}
+
+.label {
+    margin-left: 16px;
+}

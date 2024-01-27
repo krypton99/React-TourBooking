@@ -12,11 +12,9 @@ function Tour() {
     const [tours, setTours] = useState([]);
     const handleApi = async () => {
         const tours = await getTours();
-        console.log(tours);
         setTours(tours);
     };
     useEffect(() => {
-        console.log('mounted');
         handleApi();
     }, []);
 

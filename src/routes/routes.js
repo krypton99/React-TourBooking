@@ -12,6 +12,7 @@ import EditTour from '~/pages/Admin/TourManagement/EditTour/EditTour';
 import Price from '~/pages/Admin/PriceManagement/Price/Price';
 import CreatePrice from '~/pages/Admin/PriceManagement/CreatePrice';
 import EditPrice from '~/pages/Admin/PriceManagement/EditPrice/EditPrice';
+import TourDetail from '~/pages/TourDetail';
 
 // Public Routes
 const publicRoutes = [
@@ -29,6 +30,12 @@ const publicRoutes = [
     },
     { path: config.routes.about, component: About, layout: HeaderOnly },
     { path: config.routes.services, component: Services, layout: HeaderOnly },
+    {
+        path: config.routes.detail,
+        component: TourDetail,
+        layout: HeaderOnly,
+        banner: true,
+    },
     { path: config.routes.admin, component: Admin, layout: ManagementLayout },
     {
         path: config.routes.tourManagement.tours,

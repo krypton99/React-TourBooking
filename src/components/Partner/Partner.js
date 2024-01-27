@@ -9,14 +9,14 @@ function Partner() {
         <div className={cx('wrapper')}>
             <div className="grid wide">
                 <div className="grid__row">
-                    <div className="grid__column l-12">
+                    <div className="grid__column lg-12">
                         <ul className={cx('partner-list', 'grid__row')}>
                             <li
                                 className={cx(
                                     'partner-item',
                                     'grid__column',
-                                    'l-2-4',
-                                    'm-2-4',
+                                    'lg-2-4',
+                                    'md-2-4',
                                     'c-2-4',
                                 )}
                             >
@@ -30,8 +30,8 @@ function Partner() {
                                 className={cx(
                                     'partner-item',
                                     'grid__column',
-                                    'l-2-4',
-                                    'm-2-4',
+                                    'lg-2-4',
+                                    'md-2-4',
                                     'c-2-4',
                                 )}
                             >
@@ -45,8 +45,8 @@ function Partner() {
                                 className={cx(
                                     'partner-item',
                                     'grid__column',
-                                    'l-2-4',
-                                    'm-2-4',
+                                    'lg-2-4',
+                                    'md-2-4',
                                     'c-2-4',
                                 )}
                             >
@@ -60,8 +60,8 @@ function Partner() {
                                 className={cx(
                                     'partner-item',
                                     'grid__column',
-                                    'l-2-4',
-                                    'm-2-4',
+                                    'lg-2-4',
+                                    'md-2-4',
                                     'c-2-4',
                                 )}
                             >
@@ -75,8 +75,8 @@ function Partner() {
                                 className={cx(
                                     'partner-item',
                                     'grid__column',
-                                    'l-2-4',
-                                    'm-2-4',
+                                    'lg-2-4',
+                                    'md-2-4',
                                     'c-2-4',
                                 )}
                             >
