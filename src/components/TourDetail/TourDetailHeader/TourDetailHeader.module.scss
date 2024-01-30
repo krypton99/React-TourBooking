@@ -10,7 +10,8 @@
 .item {
     font-size: 2.1rem;
     flex: 1;
-    padding: 23px;
+    padding: 24px;
+    text-align: center;
 
     &:hover {
         cursor: pointer;
@@ -18,6 +19,11 @@
 
     &.active {
         background-color: var(--white);
+    }
+
+    button {
+        background-color: red;
+        width: 100%;
     }
 }
 

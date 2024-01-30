@@ -36,7 +36,7 @@ function Price() {
     return (
         <>
             <Link
-                to={'/admin/tour/prices/create/1'}
+                to={`/admin/tour/prices/create/${params.id}`}
                 className="btn btn-primary"
             >
                 Thêm giá
